@@ -20,6 +20,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var Th: UISwitch!
     @IBOutlet weak var F: UISwitch!
     
+    
+    @IBOutlet weak var notificationsButton: UISwitch!
+    
     @IBOutlet weak var Save: UIButton! //this is a save button
     
     

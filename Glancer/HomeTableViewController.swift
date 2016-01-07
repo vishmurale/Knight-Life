@@ -395,7 +395,7 @@ class HomeTableViewController: UITableViewController {
             print(hour_after)
             
             
-            
+            //last block
             if(i == Widget_Block[Day_Num].count-1 && hour_two >= hour_one){
                 
                 let EndTime = End_Times[Day_Num]
@@ -410,6 +410,7 @@ class HomeTableViewController: UITableViewController {
                     }
                     else {
                         Curr_block = "GetToClass"
+                        next_block = ""
                     }
                 }
                 else{
