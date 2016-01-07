@@ -104,7 +104,15 @@ class HomeTableViewController: UITableViewController {
             let currentBlock = currentValues.current_block
             let currentClass = appDelegate.Days[Day_Num].messages_forBlock[currentBlock]
             if currentClass != nil {
-                return "\(currentBlock) Block (\(currentClass!))"
+                if currentClass == "Lab" {
+                    return "\(currentClass)"
+                } else if currentClass == "Activities" {
+                    return "\(currentClass)"
+                } else if currentClass == "X" {
+                    return "\(currentClass) Block"
+                } else {
+                    return "\(currentBlock) Block (\(currentClass!))"
+                }
             } else if currentBlock == "GetToClass" {
                 return "Class Over"
             } else {
